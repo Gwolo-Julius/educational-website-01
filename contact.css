@@ -1,0 +1,154 @@
+.contact__container {
+  margin-top: 4rem;
+  width: 100%;
+  position: relative;
+  min-height: 70vh;
+}
+
+.contact__container img {
+  width: 100%;
+}
+
+.contact__card {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  width: 50%;
+  /* height: 400px; */
+  background-color: #ffffff6d;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  backdrop-filter: blur(2px);
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  padding: 1rem;
+  transform: translate(-50%, -50%);
+}
+
+.contact__image {
+  width: 100%;
+}
+
+.contact__image img {
+  width: 100%;
+}
+
+.contact__left,
+.contact__right {
+  width: 60%;
+  overflow: hidden;
+  background-color: #ffffff9c;
+  border-radius: 0.5rem;
+}
+
+.contact__right {
+  padding: 0.6rem;
+}
+
+.contact__right h2 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact__right__top {
+  margin-top: 1.2rem;
+  width: 100%;
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+}
+
+.contact__right__top input,
+textarea {
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  border: none;
+  border-bottom: 2px solid gray;
+  background-color: transparent;
+}
+
+.contact__right .contact__submit__btn {
+  margin-top: 0.6rem;
+  padding: 0.3rem 2rem;
+  border: none;
+  border-radius: 4rem;
+  background-color: orange;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+
+.contact__right .contact__submit__btn:hover {
+  background-color: #02bdfb;
+  cursor: pointer;
+}
+
+.contact__details {
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+.contact__details p {
+  font-size: 0.8rem;
+  color: #222;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1.3rem;
+  row-gap: 1.1rem;
+}
+
+.telephone img {
+  width: 18px;
+}
+
+.telephone p {
+  color: coral;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  .contact__container {
+    margin-top: 4rem;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .contact__card {
+    width: 90%;
+  }
+  .contact__bg {
+    min-height: 100vh;
+  }
+  .contact__card {
+    flex-direction: column-reverse;
+  }
+
+  .contact__left,
+  .contact__right {
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff9c;
+    border-radius: 0.5rem;
+  }
+
+  .contact__container img {
+    width: 100%;
+  }
+  .telephone img {
+  width: 18px;
+}
+}
+@media (min-width: 769px) and (max-width: 992px) {
+
+  .contact__card {
+    width: 90%;
+  }
+}

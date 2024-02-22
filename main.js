@@ -22,3 +22,13 @@ navLinks.forEach((link) => {
 navLi.forEach((element) => {
   element.addEventListener("click", closeMenu);
 });
+
+window.addEventListener("load", () => {
+  const load = document.querySelector(".loader");
+  load.classList.add("loader-hidden");
+  load.style.visibility = "3.75s";
+
+  load.addEventListener("transitioned", () => {
+    document.body.removeChild("loader-hidden");
+  });
+});

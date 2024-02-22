@@ -1,0 +1,107 @@
+.login__container {
+  height: 90vh;
+  width: 100%;
+  background: url(images/login.png) coral;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login__container h2 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.login {
+  background-color: #ffffff4d;
+  width: 28%;
+  margin: 1rem auto;
+  padding: 1.2rem;
+  backdrop-filter: blur(6px);
+  border-radius: 1rem;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.login input {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.01rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.login input:first-child {
+  margin-top: 2rem;
+}
+
+.login input::placeholder {
+  color: #01bdfc;
+}
+
+.login .submit__btn {
+  background-color: #01bdfc;
+  color: #fff;
+  border-radius: 8px;
+  border: 0;
+  margin: 1.4rem 0;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.01rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.login .submit__btn:hover {
+  background-color: coral;
+}
+
+.signup {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.signup p {
+  color: #000;
+  font-size: 1rem;
+}
+
+.signup a {
+  text-decoration: underline;
+  font-size: 1rem;
+  color: #01bdfc;
+}
+
+.signup a:hover {
+  color: coral;
+}
+.checkbox span {
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  .login {
+    background-color: #ffffff4d;
+    width: 85%;
+   
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .login {
+    background-color: #ffffff4d;
+    width: 55%;
+   
+  }
+}
