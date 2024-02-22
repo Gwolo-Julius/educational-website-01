@@ -9,7 +9,9 @@ console.log(navEl, hambugerEl, closeBtnEl);
 hambugerEl.addEventListener("click", () => {
   navEl.style.right = "0";
 });
-
+window.addEventListener("load", () => {
+  navEl.style.right = "-100%";
+});
 const closeMenu = () => {
   navEl.style.right = "-100%";
 };
