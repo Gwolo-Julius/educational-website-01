@@ -28,7 +28,7 @@ navLi.forEach((element) => {
 window.addEventListener("load", () => {
   const load = document.querySelector(".loader");
   load.classList.add("loader-hidden");
-  load.style.visibility = "3.75s";
+  load.style.visibility = "0.75s";
 
   load.addEventListener("transitioned", () => {
     document.body.removeChild("loader-hidden");
